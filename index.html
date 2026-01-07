@@ -2,47 +2,88 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Informatique — Projets d'Adam</title>
+    <title>Studio Hastag — Informatique</title>
     <style>
         body {
+            margin: 0;
+            padding: 0;
+            background: #0d0d0d;
+            color: #eaeaea;
             font-family: Arial, sans-serif;
-            background: #111;
-            color: #eee;
             text-align: center;
-            padding: 40px;
         }
+
+        header {
+            padding: 40px 20px;
+            background: #111;
+            border-bottom: 1px solid #222;
+        }
+
         h1 {
-            margin-bottom: 10px;
+            font-size: 2.5rem;
+            margin: 0;
+            letter-spacing: 2px;
+            text-transform: uppercase;
         }
-        .buttons {
-            margin-top: 30px;
+
+        h2 {
+            font-weight: normal;
+            margin-top: 10px;
+            color: #aaa;
         }
-        a.button {
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .button {
             display: inline-block;
-            padding: 12px 25px;
-            margin: 10px;
-            background: #333;
-            color: white;
+            padding: 14px 30px;
+            margin: 15px;
+            background: #1c1c1c;
+            color: #fff;
             text-decoration: none;
             border-radius: 6px;
+            font-size: 1.1rem;
+            border: 1px solid #333;
             transition: 0.2s;
         }
-        a.button:hover {
-            background: #555;
+
+        .button:hover {
+            background: #333;
+            border-color: #555;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9rem;
         }
     </style>
 </head>
+
 <body>
 
-    <h1>Informatique — Projets d'Adam</h1>
-    <p>Développement, systèmes Linux, environnement Cinnade et outils MythicOS.</p>
+    <header>
+        <h1>Studio Hastag</h1>
+        <h2>Informatique — Projets d'Adam</h2>
+    </header>
 
-    <div class="buttons">
-        <a class="button" href="https://cinnade.hastag.fr">Cinnade</a>
-        <a class="button" href="https://mythicos.hastag.fr">MythicOS</a>
-        <a class="button" href="https://hastag.fr">Retour</a>
+    <div class="container">
+        <p>Bienvenue sur l’espace informatique de Studio Hastag.<br>
+        Retrouvez ici mes projets Linux, mon environnement Cinnade et la distribution MythicOS.</p>
+
+        <div class="buttons">
+            <a class="button" href="https://cinnade.hastag.fr">Cinnade</a>
+            <a class="button" href="https://mythicos.hastag.fr">MythicOS</a>
+            <a class="button" href="https://hastag.fr">Retour au site principal</a>
+        </div>
     </div>
+
+    <footer>
+        © 2026 Studio Hastag — Tous droits réservés.
+    </footer>
 
 </body>
 </html>
-
