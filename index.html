@@ -37,39 +37,49 @@
             max-width: 900px;
         }
 
-        /* --- STYLE DES SECTIONS TYPE POKÉMON --- */
+        /* --- SECTIONS RECTANGULAIRES STYLE ASSISTANT --- */
         .section {
             display: block;
-            padding: 30px;
-            margin: 25px 0;
-            border-radius: 18px;
+            padding: 35px;
+            margin: 30px 0;
+            border: 2px solid #333;
+            background: #141414;
             text-decoration: none;
             color: white;
             font-size: 1.4rem;
             font-weight: bold;
-            transition: transform 0.25s, box-shadow 0.25s;
+            text-align: left;
+            transition: 0.25s;
+            position: relative;
         }
 
         .section:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 0 25px rgba(255,255,255,0.25);
+            border-color: #fff;
+            box-shadow: 0 0 20px rgba(255,255,255,0.15);
+            transform: translateY(-4px);
         }
 
-        /* Couleurs inspirées des types Pokémon */
-        .type-fire {
-            background: linear-gradient(135deg, #ff7a00, #ff3c00);
-            box-shadow: 0 0 15px rgba(255, 80, 0, 0.4);
+        /* Bandeau latéral façon Pokédex */
+        .section::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 12px;
+            height: 100%;
         }
 
-        .type-electric {
-            background: linear-gradient(135deg, #ffe600, #ffb800);
-            color: #222;
-            box-shadow: 0 0 15px rgba(255, 230, 0, 0.4);
+        /* Couleurs thématiques */
+        .type-electric::before {
+            background: #ffe600;
         }
 
-        .type-water {
-            background: linear-gradient(135deg, #009dff, #005eff);
-            box-shadow: 0 0 15px rgba(0, 120, 255, 0.4);
+        .type-water::before {
+            background: #009dff;
+        }
+
+        .type-fire::before {
+            background: #ff3c00;
         }
 
         footer {
@@ -92,9 +102,9 @@
         <p>Bienvenue sur l’espace informatique de Studio Hastag.<br>
         Retrouvez ici mes projets Linux, mon environnement Cinnade et la distribution MythicOS.</p>
 
-        <!-- Sections façon Pokémon -->
+        <!-- Sections rectangulaires -->
         <a class="section type-electric" href="https://cinnade.hastag.fr">
-            ⚡ Cinnade — Environnement de bureau
+            ⚡ Cinnade — Environnement Linux
         </a>
 
         <a class="section type-water" href="https://mythicos.hastag.fr">
