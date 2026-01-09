@@ -33,25 +33,43 @@
         }
 
         .container {
-            margin-top: 50px;
+            margin: 40px auto;
+            max-width: 900px;
         }
 
-        .button {
-            display: inline-block;
-            padding: 14px 30px;
-            margin: 15px;
-            background: #1c1c1c;
-            color: #fff;
+        /* --- STYLE DES SECTIONS TYPE POKÉMON --- */
+        .section {
+            display: block;
+            padding: 30px;
+            margin: 25px 0;
+            border-radius: 18px;
             text-decoration: none;
-            border-radius: 6px;
-            font-size: 1.1rem;
-            border: 1px solid #333;
-            transition: 0.2s;
+            color: white;
+            font-size: 1.4rem;
+            font-weight: bold;
+            transition: transform 0.25s, box-shadow 0.25s;
         }
 
-        .button:hover {
-            background: #333;
-            border-color: #555;
+        .section:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 0 25px rgba(255,255,255,0.25);
+        }
+
+        /* Couleurs inspirées des types Pokémon */
+        .type-fire {
+            background: linear-gradient(135deg, #ff7a00, #ff3c00);
+            box-shadow: 0 0 15px rgba(255, 80, 0, 0.4);
+        }
+
+        .type-electric {
+            background: linear-gradient(135deg, #ffe600, #ffb800);
+            color: #222;
+            box-shadow: 0 0 15px rgba(255, 230, 0, 0.4);
+        }
+
+        .type-water {
+            background: linear-gradient(135deg, #009dff, #005eff);
+            box-shadow: 0 0 15px rgba(0, 120, 255, 0.4);
         }
 
         footer {
@@ -74,11 +92,18 @@
         <p>Bienvenue sur l’espace informatique de Studio Hastag.<br>
         Retrouvez ici mes projets Linux, mon environnement Cinnade et la distribution MythicOS.</p>
 
-        <div class="buttons">
-            <a class="button" href="https://cinnade.hastag.fr">Cinnade</a>
-            <a class="button" href="https://mythicos.hastag.fr">MythicOS</a>
-            <a class="button" href="https://hastag.fr">Retour au site principal</a>
-        </div>
+        <!-- Sections façon Pokémon -->
+        <a class="section type-electric" href="https://cinnade.hastag.fr">
+            ⚡ Cinnade — Environnement de bureau
+        </a>
+
+        <a class="section type-water" href="https://mythicos.hastag.fr">
+            💧 MythicOS — Distribution Linux
+        </a>
+
+        <a class="section type-fire" href="https://hastag.fr">
+            🔥 Retour au site principal
+        </a>
     </div>
 
     <footer>
