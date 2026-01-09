@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://linux-mythic-archive.github.io/informatique-index/sitemap.xml
